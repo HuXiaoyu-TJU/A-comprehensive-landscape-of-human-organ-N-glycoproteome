@@ -1,0 +1,11 @@
+N,H,F,A
+(N(N(H(H)(H))))
+(N(N(H(H)(H(H)))))
+(N(N(H(H(H)(H))(H))))
+(N(N(H(H(H)(H(H)))(H))))
+(N(N(H(H(H)(H))(H(H(H))))))
+(N(N(H(H(N)(N(H(F))))(H))))
+(N(N(H(H(N(H(F))))(H(N(H))))))
+(N(N(H(H(H))(H(N(H))(N(H(F)))))))
+(N(N(H(H(N(H(F))))(H(N)))))
+(N(N(H(H(N(H(A))))(H(N(H(F)))))))

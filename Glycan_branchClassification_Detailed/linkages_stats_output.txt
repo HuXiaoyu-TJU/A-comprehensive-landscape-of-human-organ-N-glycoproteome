@@ -1,0 +1,15 @@
+Branch type	Count
+Mannose	5
+None	1
+GlcNAc Terminal	2
+GlcNAc Terminal Fucosylated	0
+Gal Terminal	2
+Gal Terminal Fucosylated	0
+Sia Terminal	1
+Sia Terminal Fucosylated	0
+Fuc Terminal	5
+Fuc Terminal Fucosylated	0
+DiGal Termial	0
+DiGal Termial Fucosylated	0
+DiHexNAc Terminal	0
+DiHexNAc Terminal Fucosylated	0
