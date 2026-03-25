@@ -5,7 +5,7 @@ library(purrr)
 library(patchwork)
 library(tidyr)
 
-# 读取所有数据文件
+
 file_paths <- c(
   "S1-ANN.xlsx",
   "S2-ANN.xlsx",
@@ -13,17 +13,17 @@ file_paths <- c(
   "S4-ANN.xlsx"
 )
 
-# 读取并合并所有数据
+
 all_data <- map_df(file_paths, ~read_excel(.x), .id = "Dataset")
 
-# 数据预处理
+
 all_data$`relative abundance` <- as.numeric(all_data$`relative abundance`)
 all_data <- all_data %>% filter(`relative abundance` > 0)
 all_data$Dataset <- factor(all_data$Dataset, levels = 1:4, labels = paste0("S", 1:4))
 all_data$X <- factor(all_data$X, levels = c("mono", "bi", "tri", "tetra"))
 all_data$Y <- factor(all_data$Y, levels = unique(all_data$Y))
 
-# 创建主图
+
 main_plot <- ggplot(all_data, aes(x = X, y = Y, size = `relative abundance`, fill = X)) +
   geom_point(shape = 21, color = "black", stroke = 1, alpha = 0.7) +
   scale_size_continuous(range = c(2, 15)) +
